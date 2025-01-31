@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Microsoft</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            line-height: 1.5;
+        }
+        body {
+            background-color: white;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: white;
+            padding: 15px 50px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .header nav {
+            display: flex;
+            gap: 25px;
+        }
+
+        .header a {
+            text-decoration: none;
+            color: black;
+            font-size: 16px;
+            font-weight: 500;
+        }
+
+        .header a:hover {
+            text-decoration: underline;
+        }
+
+        .promo-banner {
+            background-color: #0067b8;
+            text-align: center;
+            padding: 18px;
+            font-size: 15px;
+        }
+
+        .promo-banner a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .promo-banner a:hover {
+            text-decoration: underline;
+        }
+
+        .hero-section {
+            position: relative;
+            background: url('other_images/background.avif') no-repeat center center/cover;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            padding: 50px 80px;
+        }
+
+        .hero-content {
+            background-color: white;
+            padding: 20px;
+            width: 30%;
+            height: 40%;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .hero-content h1 {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .hero-content p {
+            margin: 10px 0;
+            font-size: 15px;
+        }
+
+        .hero-content button {
+            background-color: #0067b8;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 12px;
+        }
+
+        .hero-content button:hover {
+            background-color: #00549a;
+        }
+
+        .feature-links {
+            display: flex;
+            justify-content: center;
+            gap: 60px;
+            margin: 40px 0;
+            flex-wrap: wrap;
+        }
+
+        .feature-links div {
+            text-align: center;
+        }
+
+        .feature-links img {
+            width: 50px;
+            height: auto;
+        }
+
+        .feature-links a {
+            display: block;
+            margin-top: 10px;
+            color: #0067b8;
+            font-size: 14px;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            padding: 40px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .product-card {
+            background-color: white;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .product-card img {
+            width: 100%;
+        }
+
+        .product-card h2 {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+
+        .product-card p {
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+
+        .product-card button {
+            background-color: #0067b8;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="other_images/microsoft_logo.png" alt="Microsoft Logo">
+        <nav>
+            <a href="#">Microsoft 365</a>
+            <a href="#">Teams</a>
+            <a href="#">Copilot</a>
+            <a href="#">Windows</a>
+            <a href="#">Surface</a>
+            <a href="#">More</a>
+        </nav>
+    </div>
+    
+    <div class="promo-banner">
+        <a href="#">Pay your way, flexible payment options available at checkout. Learn more ></a>
+    </div>
+    
+    <div class="hero-section">
+        <div class="hero-content">
+            <h1>Save up to $500 on select Surface Pro, Copilot+ PC</h1>
+            <p>Score savings on a fast, flexible 2-in-1 built for advanced AI experiences. For a limited time.</p>
+            <button type="button">Shop now</button>
+        </div>
+    </div>
+    
+    <div class="feature-links">
+        <div><img src="photos_vector/photo_vector_format_1.svg" alt="Surface"><a href="#">Shop Surface devices</a></div>
+        <div><img src="photos_vector/photo_vector_format_2.svg" alt="Xbox"><a href="#">Shop Xbox games</a></div>
+        <div><img src="photos_vector/photo_vector_format_3.svg" alt="Accessories"><a href="#">Shop for accessories</a></div>
+        <div><img src="photos_vector/photo_vector_format_4.svg" alt="Business"><a href="#">Shop for business</a></div>
+    </div>
+    
+    <div class="product-grid">
+        <div class="product-card">
+            <img src="other_images/xbox_devices.webp" alt="Xbox Series S">
+            <h2>Xbox Series S</h2>
+            <p>Next-gen performance in the smallest Xbox ever.</p>
+            <button type="button">Shop Xbox Series S</button>
+        </div>
+        <div class="product-card">
+            <img src="other_images/laptop.avif" alt="Surface Laptop">
+            <h2>Save up to $500 on select Surface Laptop</h2>
+            <p>Save big on an AI-powered companion made for next-gen performance. For a limited time.</p>
+            <button type="button">Shop now</button>
+        </div>
+        <div class="product-card">
+            <img src="other_images/controller.avif">
+            <h2>Reveal the mysteries within</h2>
+            <p>Get the Xbox Wireless Controller – Pulse Cipher, featuring a transparent red design, silver interior, metallic features, and more.</p>
+            <button type="button">Pre-order now</button>
+        </div>
+
+        <div class="product-card">
+            <img src="other_images/slides.avif">
+            <h2>Copilot is your AI companion</h2>
+            <p>Always by your side, ready to support you whenever and wherever you need it.</p>
+            <button type="button">Download the Capilot app</button>
+        </div>
+
+    </div>
+</body>
+</html>
