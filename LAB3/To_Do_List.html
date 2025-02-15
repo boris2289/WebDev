@@ -38,10 +38,13 @@
             cursor: pointer;
             transition: background 0.3s;
         }
-        li.completed {
+        /* li.completed {
             text-decoration: line-through;
             color: gray;
-            background: #f2b6b6; /* Lighter pink for completed tasks */
+        } */
+        li.completed span {
+            text-decoration: line-through;
+            color: gray;
         }
         .trash {
             background: none;
@@ -98,6 +101,7 @@
             let tasks = JSON.parse(localStorage.getItem("tasks")) || [];
             tasks.splice(index, 1);
             localStorage.setItem("tasks", JSON.stringify(tasks));
+
             renderTasks();
         }
 
